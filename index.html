@@ -209,22 +209,22 @@
         </section>
       </main>
       <footer>
-        <div>
-          <h3>Poprzednie edycje:</h3>
+        <h3>Poprzednie edycje:</h3>
+        <div class="footer__wrapper">
           <div class="footer__editions">
             <p class="footer__edition">Edycja pierwsza</p>
             <p class="footer__edition">Edycja druga</p>
             <p class="footer__edition">Edycja trzecia</p>
           </div>
-          <p class="footer__copyrights">
-            © 2019 Nazwa firmy sp. z o.o. wszystkie prawa zastrzeżone
-          </p>
-        </div>
-        <div class="footer__socials">
-          <div class="footer__container">
+          <div class="footer__socials">
             <i class="footer__icons fab fa-facebook-f"></i>
             <i class="footer__icons fab fa-instagram"></i>
           </div>
+        </div>
+        <div class="footer__container">
+          <p class="footer__copyrights">
+            © 2019 Nazwa firmy sp. z o.o. wszystkie prawa zastrzeżone
+          </p>
           <p class="footer__privacy">Polityka prywatności</p>
         </div>
       </footer>
@@ -241,9 +241,13 @@
         breakpoints: {
           450: {
             perPage: 2,
+            arrows: true,
+            gap: 25,
           },
           850: {
             perPage: 3,
+            arrows: true,
+            gap: 25,
           },
           1000: {
             perPage: 4,

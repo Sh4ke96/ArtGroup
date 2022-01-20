@@ -371,38 +371,37 @@ footer {
   font-size: 16px;
   font-weight: normal;
   font-family: $accent-font;
-  @media only screen and (min-width: 1366px) {
-    display: flex;
-    justify-content: space-between;
-  }
   @media only screen and (min-width: 1800px) {
     padding: 40px 140px;
   }
-  .footer__editions {
-    margin-top: 1rem;
+  .footer__wrapper {
     @media only screen and (min-width: 1366px) {
       display: flex;
+      justify-content: space-between;
     }
-    @media only screen and (min-width: 1800px) {
-      margin-top: 20px;
-    }
-    .footer__edition {
+    .footer__editions {
+      margin-top: 1rem;
       @media only screen and (min-width: 1366px) {
-        margin-right: 165px;
+        display: flex;
+      }
+      @media only screen and (min-width: 1800px) {
+        margin-top: 20px;
+      }
+      .footer__edition {
+        @media only screen and (min-width: 1366px) {
+          margin-right: 120px;
+        }
+        @media only screen and (min-width: 1800px) {
+          margin-right: 165px;
+        }
       }
     }
-  }
-  .footer__copyrights {
-    margin-top: 1rem;
-    @media only screen and (min-width: 1366px) {
-      margin-top: 75px;
-    }
-  }
-  .footer__socials {
-    margin-top: 1rem;
-    .footer__container {
+    .footer__socials {
+      margin-top: 1rem;
       display: flex;
-      justify-content: flex-end;
+      @media only screen and (min-width: 1366px) {
+        margin-top: 0rem;
+      }
       .footer__icons {
         display: flex;
         justify-content: center;
@@ -411,15 +410,29 @@ footer {
         width: 44px;
         height: 44px;
         border-radius: 50%;
-        margin-left: 1rem;
+        margin-right: 1rem;
         background-color: #e4e9ee;
+        @media only screen and (min-width: 1366px) {
+          margin-left: 1rem;
+          margin-right: 0;
+        }
       }
     }
   }
-  .footer__privacy {
-    margin-top: 1rem;
+  .footer__container {
     @media only screen and (min-width: 1366px) {
+      display: flex;
+      justify-content: space-between;
       margin-top: 75px;
+    }
+    .footer__copyrights {
+      margin-top: 1rem;
+    }
+    .footer__privacy {
+      margin-top: 1rem;
+      @media only screen and (min-width: 1366px) {
+        margin-right: 135px;
+      }
     }
   }
 }
